@@ -125,14 +125,10 @@ body{
 .education{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr ;
-    gap: 2rem;
+    gap: 1rem 2rem;
+    grid-template-rows: repeat(4, auto);
 }
-.education-photo{
-    display: flex;
-    justify-content: center;
-    align-items: end;
-}
+
 .education-title{
     display: flex;
     flex-direction: column;
@@ -142,8 +138,60 @@ body{
     font-size: 6rem;
     line-height: 5rem;
 }
-.education-photo > img{
-    height: 450px;
+
+.education-info {
+    grid-area: 1 / 2 / 4 / 3;
+}
+
+.education-info > h3{
+    font-size: 2.5rem;
+}
+.education-time {
+    padding-top: 5px;
+    width: 100px;
+}
+.education-info-items{
+    display: flex;
+    flex-direction: column;
+}
+.education-info-item{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    border-top: 3px solid #547D68;
+    margin-top: 1rem;
+    padding: 0.5rem 0rem;
+}
+.education-name-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.education-name-ucniversity{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.education-diploma{
+    font-size: 0.9rem;
+    color: #6da387;
+}
+
+.skills > h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.skills-items{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-item > img{
+    height: 3rem;
 }
 /*Tablet*/
 @media (min-width: 481px) and (max-width: 1200px){
@@ -168,6 +216,13 @@ body{
     .header{
         height: 100%;
         background: linear-gradient(65deg, #e4e4e4 65%, #547d68 35%);
+    }
+    .education{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+    .education-info {
+        grid-area: 3 / 1 / 4 / 2;
     }
 }
 @media (max-width: 651px){
@@ -201,9 +256,15 @@ body{
     .hero {
         margin-top: 1.5rem;
     }
+    .header{
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width: 426px) {
+    .container {
+        margin: 0 2rem;
+    }
     .header {
         background: linear-gradient(60deg, #e4e4e4 75%, #547d68 25%);
     }
@@ -219,9 +280,28 @@ body{
     .my-name > h1 {
         font-size: 1.5rem;
     }
+    .education{
+        gap: 2rem;
+    }
+    .skills > h3{
+        margin-bottom: 1rem;
+    }
+    .education-title {
+        gap: 1rem;
+    }
+    .education-title > h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .education-time {
+        width: auto;
+    }
 }
 
 @media (max-width: 320px){
+    .container {
+        margin: 0 1rem;
+    }
     .hero-img > img{
         display: none;
     }
@@ -229,5 +309,7 @@ body{
         grid-template-rows: 100%;
         margin-top: 0.5rem;
     }
-
+    .message-me {
+        margin-bottom: 2rem;
+    }
 }
