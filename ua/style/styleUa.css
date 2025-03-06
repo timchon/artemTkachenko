@@ -1,3 +1,28 @@
 .work-title{
     line-height: 4.5rem;
 }
+
+@media (max-width:768px){
+    .work-box{
+        grid-template-rows: 175px auto;
+    }
+    
+}
+
+@media (max-width:426px){
+    .work-box{
+        grid-template-rows: 130px auto;
+    }
+    .work-title {
+        line-height: 3.5rem;
+    }
+}
+
+@media (max-width:320px){
+    .work-box{
+        grid-template-rows: 110px auto;
+    }
+    .work-title {
+        line-height: 3rem;
+    }
+}
