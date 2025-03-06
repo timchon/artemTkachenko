@@ -36,7 +36,7 @@ body{
     height: 100vh;
     width: 100%;
     background: linear-gradient(55deg, #e4e4e4 60%, #547d68 30%);
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .header-top{
@@ -125,7 +125,7 @@ body{
     grid-template-columns: 1fr 2fr;
     gap: 1rem 2rem;
     grid-template-rows: repeat(4, auto);
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .education-title{
@@ -177,7 +177,7 @@ body{
 
 .skills > h3 {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .skills-items{
@@ -195,7 +195,7 @@ body{
 
 .work-experience{
     background-color: #547D68;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .work-box{
@@ -257,7 +257,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .projects-title {
@@ -541,6 +541,7 @@ body{
 @media (max-width: 576px){
     .header{
         background: linear-gradient(55deg, #e4e4e4 80%, #547d68 20%);
+        margin-bottom: 2rem;
     }
     .work-title {
         font-size: 3rem;
@@ -553,6 +554,7 @@ body{
     .my-projects {
         gap: 1.5rem;
         grid-template-rows: 130px repeat(2, 1fr);
+        margin-bottom: 2rem;
     }
     .project-1 {
         grid-area: 2 / 1 / 3 / 5;
@@ -571,6 +573,12 @@ body{
     }
     .work-box{
         grid-template-rows: 110px auto;
+    }
+    .education{
+        margin-bottom: 2rem;
+    }
+    .work-experience{
+        margin-bottom: 2rem;
     }
 }
 
