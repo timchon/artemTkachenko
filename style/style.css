@@ -398,7 +398,70 @@ body{
     font-weight: lighter;
 }
 
+.contact-social img{
+    height: 2rem;
+}
+.contact{
+    background-image: url(../accest/images/bg-contact.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 100%;
+    padding-bottom: 4rem;
+}
+.contact-box{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 2rem;
+    border-radius: 2rem;
+    background-image: url(../accest/images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact-welcome > h2{
+    font-size: 3rem;
+}
+.contact-welcome > p{
+    color: #4b6f5c;
+}
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.contact-information p{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #4b6f5c;
+    margin-bottom: 0.06rem;
+}
+.contact-information a{
+    text-decoration: none;
+    color: #213128;
+}
+.contact-link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+
+.contact-social{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.contact-social a{
+    transition: all 0.5s ease;
+}
+.contact-social a:hover{
+    transform: scale(1.2);
+}
 @media (min-width: 1201px){
     .container{
         max-width: 100%; 
@@ -434,6 +497,7 @@ body{
     }
     .work-box {
         grid-template-columns: 1fr;
+        grid-template-rows: 175px auto;
         gap: 1rem;
         padding-top: 2rem !important;
         height: 100%;
@@ -483,7 +547,7 @@ body{
 
     .my-projects {
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows:repeat(4,1fr);
+        grid-template-rows:repeat(3,1fr);
     }
     .projects-title {
         grid-area: 1 / 1 / 2 / 4;
@@ -579,6 +643,9 @@ body{
     }
     .work-experience{
         margin-bottom: 2rem;
+    }
+    .contact-welcome > h2{
+        font-size: 9vw;
     }
 }
 

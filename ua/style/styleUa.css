@@ -29,4 +29,11 @@
     .work-title {
         line-height: 3rem;
     }
+    .projects-title > h2 {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+    .my-projects {
+        grid-template-rows: 120px repeat(2, 1fr);
+    }
 }
