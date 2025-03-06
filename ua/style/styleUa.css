@@ -6,6 +6,10 @@
     .work-box{
         grid-template-rows: 175px auto;
     }
+    .projects-title > h2 {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
     
 }
 
