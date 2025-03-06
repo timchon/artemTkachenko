@@ -462,6 +462,16 @@ body{
 .contact-social a:hover{
     transform: scale(1.2);
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    font-weight: bold;
+    background-color: #547D68;
+    color: #e4e4e4;
+}
 @media (min-width: 1201px){
     .container{
         max-width: 100%; 
@@ -646,6 +656,9 @@ body{
     }
     .contact-welcome > h2{
         font-size: 9vw;
+    }
+    footer{
+        padding-bottom: 2rem;
     }
 }
 
